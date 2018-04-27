@@ -12,6 +12,18 @@
 	<array>
 		<dict>
 			<key>match</key>
+			<string>\b(programa)\b</string>
+			<key>name</key>
+			<string>keyword.meta.namespace.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(funcion)\b</string>
+			<key>name</key>
+			<string>keyword.meta.function.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(si|pero|no|regresa|mientras)\b</string>
 			<key>name</key>
 			<string>keyword.control.mate</string>
