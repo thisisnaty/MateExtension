@@ -1,0 +1,26 @@
+{
+    "name": "mate",
+    "displayName": "Mate",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "mate",
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mate",
+            "aliases": ["Mate", "mate"],
+            "extensions": [".mate"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mate",
+            "scopeName": "source.mate",
+            "path": "./syntaxes/mate.tmLanguage"
+        }]
+    }
+}
