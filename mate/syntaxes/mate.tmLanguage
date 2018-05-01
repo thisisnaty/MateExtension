@@ -18,7 +18,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(funcion)\b</string>
+			<string>\b(funcion|origen)\b</string>
 			<key>name</key>
 			<string>keyword.meta.function.mate</string>
 		</dict>
@@ -59,6 +59,79 @@
 			<key>name</key>
 			<string>comment.block.mate</string>
 		</dict>
+
+
+
+		<dict>
+			<key>match</key>
+            <string>\b(var)\b</string>
+			<key>name</key>
+			<string>variable.other.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(cierto|falso|nulo)\b</string>
+			<key>name</key>
+			<string>constant.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>"="</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<!-- No estoy seguro de tener que escapar el "-" y el "/"-->
+			<string>(\+|-|\*|/)</string>
+			<key>name</key>
+			<string>keyword.operator.arithmetic.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(<|>|<=|>=|!=|==|!)</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+            <string>\!|&amp;&amp;|\|\|</string>
+			<key>name</key>
+			<string>keyword.operator.logical.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+            <string>(\{|\})</string>
+			<key>name</key>
+			<string>meta.block.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+            <string>(\[|\])</string>
+			<key>name</key>
+			<string>meta.brackets.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+            <string>;</string>
+			<key>name</key>
+			<string>punctuation.terminator.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+            <string>,</string>
+			<key>name</key>
+			<string>punctuation.separator.mate</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(lee|escribe)\b</string>
+			<key>name</key>
+			<string>variable.other.readwrite.mate</string>
+		</dict>
+		
+
+
 	</array>
 	<key>scope</key>
 	<string>source.mate</string>
